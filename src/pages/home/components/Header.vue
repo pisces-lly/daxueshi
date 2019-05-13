@@ -14,6 +14,7 @@
 </template>
 
 <script>
+
 export default {
   name: 'HomeHeader'
 }
@@ -26,6 +27,7 @@ export default {
     line-height: .86rem
     background: $bgColor
     color: #fff
+    text-align: center
     .header-left
       width: 1.05rem
       float: left
