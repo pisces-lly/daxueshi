@@ -1,21 +1,29 @@
-# daxueshi
+# daxueshi前端开发记录
 
-> A Vue.js project
+##5月4日
+###项目初始化
+创建Git仓库daxueshi
 
-## Build Setup
+1. 使用vue-cli创建vue项目
+2. 使用vue-router
 
-``` bash
-# install dependencies
-npm install
+##5月8日
 
-# serve with hot reload at localhost:8080
-npm run dev
 
-# build for production with minification
-npm run build
+##5月10日
+###首页轮播图
+创建分支index-swiper，完成后合并分支
+1. 使用第三方轮播插件vue-awesome-swiper(v2.6.7)
+2. 消除图片加载时抖动
+3. 图片选中状态
+4. 循环输出，支持左滑
 
-# build for production and view the bundle analyzer report
-npm run build --report
-```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+##5月12日
+###首页图标区域
+创建分支index-icons，完成后合并分支
+1. 初步定为6个图标(公司、学校、专业、论坛、帮助、我的)
+2. 调整大小及布局，主页面显示4个图标
+3. 实现图标拖动，左右轮播
+
+

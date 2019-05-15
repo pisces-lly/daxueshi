@@ -43,7 +43,6 @@ export default {
       margin-top: .12rem
       background: #ffffff
       border-radius: .1rem
-      //text-align: left
     .header-right
       width: 0.9rem
       float: right
