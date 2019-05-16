@@ -2,14 +2,8 @@
     <div class="wrapper">
       <swiper :options="swiperOption">
       <!-- slides -->
-        <swiper-slide>
-          <img  class="swiper-image" src="../../../img/swiper0.jpg" />
-        </swiper-slide>
-        <swiper-slide>
-          <img class="swiper-image" src="../../../img/swiper1.jpg" />
-        </swiper-slide>
-        <swiper-slide>
-          <img class="swiper-image" src="../../../img/swiper2.jpg" />
+        <swiper-slide v-for="item of swiperList" :key="item.id">
+          <img class="swiper-image" :src="item.imgUrl">
         </swiper-slide>
         <div class="swiper-pagination"  slot="pagination"></div>
       </swiper>
@@ -24,7 +18,17 @@ export default {
       swiperOption: {
         pagination: '.swiper-pagination',
         loop: true
-      }
+      },
+      swiperList: [{
+        id: '0001',
+        imgUrl: require('../../../img/swiper0.jpg')
+      }, {
+        id: '0002',
+        imgUrl: require('../../../img/swiper1.jpg')
+      }, {
+        id: '0003',
+        imgUrl: require('../../../img/swiper2.jpg')
+      }]
     }
   }
 }
@@ -41,7 +45,6 @@ export default {
     overflow: hidden
     padding-bottom: 37.25%
     background: #eee
-
     .swiper-image
       width: 100%
 </style>
