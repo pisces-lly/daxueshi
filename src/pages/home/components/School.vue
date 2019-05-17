@@ -5,13 +5,13 @@
       热门学校
     </div>
     <ul>
-      <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
+      <li class="item border-bottom" v-for="item of schoolList" :key="item.id">
         <img class="item-img" :src="item.imgUrl"/>
         <div class="item-info">
           <p class="item-title">{{item.title}}</p>
           <p class="item-desc">{{item.desc}}</p>
           <p class="item-major-desc">热门专业:</p>
-          <p class="item-major" v-for="items of item.major">{{items}}</p>
+          <p class="item-major" v-for="items of item.major" :key="items">{{items}}</p>
           <button class="item-button">查看详情</button>
         </div>
       </li>
@@ -24,7 +24,7 @@ export default {
   name: 'HomeRecommend',
   data () {
     return {
-      recommendList: [{
+      schoolList: [{
         id: '0001',
         imgUrl: require('../../../img/ecnu.png'),
         title: '华东师范大学',

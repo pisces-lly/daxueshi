@@ -47,3 +47,10 @@
 ## 5月16日
 ### 热门学校信息
 仿照热门公司信息，完成热门学校信息部分的内容
+
+## 5月17日
+### ajax获取首页数据
+创建index-ajax分支，完成后合并分支
+1. 使用axios
+2. 使用proxy代理。将对api上json文件请求转发到本地static/mock文件夹下
+3. 完成static/mock文件下index.json
