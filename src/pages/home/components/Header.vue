@@ -6,7 +6,7 @@
     </div>
     <div class="header-input">
       <span class="iconfont">&#xe632;</span>
-      输入公司/专业</div>
+      输入公司/学校/专业</div>
     <div class="header-right">
       搜索
     </div>
@@ -14,7 +14,6 @@
 </template>
 
 <script>
-
 export default {
   name: 'HomeHeader'
 }

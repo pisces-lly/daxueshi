@@ -5,7 +5,7 @@
       热门公司
     </div>
     <ul>
-      <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
+      <li class="item border-bottom" v-for="item of companyList" :key="item.id">
         <img class="item-img" :src="item.imgUrl"/>
         <div class="item-info">
           <p class="item-title">{{item.title}}</p>
@@ -21,10 +21,10 @@
 
 <script>
 export default {
-  name: 'HomeRecommend',
+  name: 'HomeCompany',
   data () {
     return {
-      recommendList: [{
+      companyList: [{
         id: '0001',
         imgUrl: require('../../../img/jingdong.png'),
         title: '京东',
