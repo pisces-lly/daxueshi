@@ -5,7 +5,7 @@
       热门公司
     </div>
     <ul>
-      <li class="item border-bottom" v-for="item of companyList" :key="item.id">
+      <li class="item border-bottom" v-for="item of list" :key="item.id">
         <img class="item-img" :src="item.imgUrl"/>
         <div class="item-info">
           <p class="item-title">{{item.title}}</p>
@@ -22,34 +22,8 @@
 <script>
 export default {
   name: 'HomeCompany',
-  data () {
-    return {
-      companyList: [{
-        id: '0001',
-        imgUrl: require('../../../img/jingdong.png'),
-        title: '京东',
-        desc: '京东是中国最大的自营式电商企业，在线销售家电、手机、电脑、\n' +
-          '服装、居家、母婴、美妆、个护、食品、旅游等13大类3,150万种SKU优质商品。',
-        salary: '15000'
-      }, {
-        id: '0002',
-        imgUrl: require('../../../img/tengxun.png'),
-        title: '腾讯',
-        desc: '深圳市腾讯计算机系统有限公司（腾讯）是一家民营IT企业，成立于' +
-          '1998年11月29日，总部位于中国广东深圳，是中国最大的互联网综合服务提供商之一，' +
-          '也是中国服务用户最多，最广的互联网企业之一',
-        salary: '15000'
-      }, {
-        id: '0003',
-        imgUrl: require('../../../img/huawei.png'),
-        title: '华为',
-        desc: '京华为技术有限公司是一家生产销售通信设备的民营通信科技公司，总部' +
-          '位于中国广东省深圳市龙岗区坂田华为基地。华为的产品主要涉及通信网络中的交换网络、' +
-          '传输网络、无线及有线固定接入网络和数据通信网络及无线终端产品，为世界各地通信运营商' +
-          '及专业网络拥有者提供硬件设备、软件、服务和解决方案',
-        salary: '15000'
-      }]
-    }
+  props: {
+    list: Array
   }
 }
 </script>

@@ -1,10 +1,10 @@
 <template>
   <div>
-    <home-header></home-header>
-    <home-swiper></home-swiper>
-    <home-icons></home-icons>
-    <home-company></home-company>
-    <home-school></home-school>
+    <home-header :city="city"></home-header>
+    <home-swiper :list="swiperList"></home-swiper>
+    <home-icons :list="iconList"></home-icons>
+    <home-company :list="companyList"></home-company>
+    <home-school :list="schoolList"></home-school>
   </div>
 </template>
 
@@ -24,13 +24,30 @@ export default {
     HomeCompany,
     HomeSchool
   },
+  data () {
+    return {
+      city: '',
+      swiperList: [],
+      iconList: [],
+      companyList: [],
+      schoolList: []
+    }
+  },
   methods: {
     getHomeInfo () {
       axios.get('/api/index.json')
         .then(this.getHomeInfoSucc)
     },
     getHomeInfoSucc (res) {
-      console.log(res)
+      res = res.data
+      if (res.ret && res.data) {
+        const data = res.data
+        this.city = data.city
+        this.swiperList = data.swiperList
+        this.iconList = data.iconList
+        this.companyList = data.companyList
+        this.schoolList = data.schoolList
+      }
     }
   },
   mounted () {

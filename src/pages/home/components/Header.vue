@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <div class="header-left">
-      城市
+      {{this.city}}
       <span class="iconfont arrow-icon">&#xe6aa;</span>
     </div>
     <div class="header-input">
@@ -15,7 +15,10 @@
 
 <script>
 export default {
-  name: 'HomeHeader'
+  name: 'HomeHeader',
+  props: {
+    city: String
+  }
 }
 </script>
 

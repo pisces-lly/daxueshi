@@ -1,6 +1,6 @@
 <template>
   <div class="icons">
-    <swiper>
+    <swiper :options="SwiperOption">
       <swiper-slide v-for="(page, index) of pages" :key="index">
       <div class="icon" v-for="item of page" :key="item.id">
         <div class="icon-image">
@@ -16,39 +16,20 @@
 <script>
 export default {
   name: 'HomeIcons',
+  props: {
+    list: Array
+  },
   data () {
     return {
-      iConList: [{
-        id: '0001',
-        imgUrl: require('../../../img/company.png'),
-        desc: '公司'
-      }, {
-        id: '0002',
-        imgUrl: require('../../../img/school.png'),
-        desc: '学校'
-      }, {
-        id: '0003',
-        imgUrl: require('../../../img/major.png'),
-        desc: '专业'
-      }, {
-        id: '0004',
-        imgUrl: require('../../../img/forum.png'),
-        desc: '论坛'
-      }, {
-        id: '0005',
-        imgUrl: require('../../../img/help.png'),
-        desc: '帮助'
-      }, {
-        id: '0006',
-        imgUrl: require('../../../img/myinfo.png'),
-        desc: '我的'
-      }]
+      SwiperOption: {
+        autoplay: false
+      }
     }
   },
   computed: {
     pages () {
       const pages = []
-      this.iConList.forEach((item, index) => {
+      this.list.forEach((item, index) => {
         const page = Math.floor(index / 4)
         if (!pages[page]) {
           pages[page] = []
