@@ -5,7 +5,7 @@
       热门学校
     </div>
     <ul>
-      <li class="item border-bottom" v-for="item of list" :key="item.id">
+      <li class="item border-bottom" v-for="item of schoolList" :key="item.id">
         <img class="item-img" :src="item.imgUrl"/>
         <div class="item-info">
           <p class="item-title">{{item.title}}</p>
@@ -22,8 +22,19 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  props: {
-    list: Array
+  data () {
+    return {
+      schoolList: [{
+        id: '0001',
+        imgUrl: require('../../../img/ecnu.png'),
+        title: '华东师范大学',
+        desc: '华东师范大学（East China Normal University），简称“华东师大”，位于中国上海，由中华人民共和国教育部直属，' +
+          '位列世界一流大学建设高校、“985工程”、“211工程”，入选国家“2011计划”、“111计划”和“国家建设高水平大学公派研究生项目”，' +
+          '“长三角高校合作联盟”、“金砖国家大学联盟”、“亚太高校书院联盟”、“中日人文交流大学联盟”成员，设有研究生院和国家大学科技园，' +
+          '是教育部、上海市人民政府和国家海洋局共建的全国重点大学。',
+        major: ['心理学', '软件工程', '教育学']
+      }]
+    }
   }
 }
 </script>
