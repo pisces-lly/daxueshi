@@ -1,0 +1,74 @@
+{
+  "comment": "目前不使用，写在前端",
+  "ret": true,
+  "data": {
+    "city": "上海",
+    "swiperList": [{
+      "id": "0001",
+      "imgUrl": "static/img/swiper0.jpg"
+    }, {
+      "id": "0002",
+      "imgUrl": "static/img/swiper1.jpg"
+    }, {
+      "id": "0003",
+      "imgUrl": "static/img/swiper2.jpg"
+    }],
+    "iconList": [{
+      "id": "0001",
+      "imgUrl": "static/img/company.png",
+      "desc": "公司"
+    }, {
+      "id": "0002",
+      "imgUrl": "static/img/school.png",
+      "desc": "学校"
+    }, {
+      "id": "0003",
+      "imgUrl": "static/img/major.png",
+      "desc": "专业"
+    }, {
+      "id": "0004",
+      "imgUrl": "static/img/forum.png",
+      "desc": "论坛"
+    }, {
+      "id": "0005",
+      "imgUrl": "static/img/help.png",
+      "desc": "帮助"
+    }, {
+      "id": "0006",
+      "imgUrl": "static/img/myinfo.png",
+      "desc": "我的"
+    }],
+    "companyList": [{
+      "id": "0001",
+      "imgUrl": "static/img/jingdong.png",
+      "title": "京东",
+      "desc": "京东是中国最大的自营式电商企业，在线销售家电、手机、电脑、服装、居家、母婴、美妆、个护、食品、旅游等13大类3,150万种SKU优质商品。",
+      "salary": "15000"
+    }, {
+      "id": "0002",
+      "imgUrl": "static/img/tengxun.png",
+      "title": "腾讯",
+      "desc": "深圳市腾讯计算机系统有限公司（腾讯）是一家民营IT企业，成立于1998年11月29日，总部位于中国广东深圳，是中国最大的互联网综合服务提供商之一，也是中国服务用户最多，最广的互联网企业之一",
+      "salary": "15000"
+    },
+      {
+        "id": "0003",
+        "imgUrl": "static/img/huawei.png",
+        "title": "华为",
+        "desc": "华为技术有限公司是一家生产销售通信设备的民营通信科技公司，总部位于中国广东省深圳市龙岗区坂田华为基地。华为的产品主要涉及通信网络中的交换网络、传输网络、无线及有线固定接入网络和数据通信网络及无线终端产品，为世界各地通信运营商及专业网络拥有者提供硬件设备、软件、服务和解决方案",
+        "salary": "15000"
+    }],
+    "schoolList": [
+    {
+        "id": "0001",
+        "imgUrl": "static/img/ecnu.png",
+        "title": "华东师范大学",
+        "desc": "华东师范大学（East China Normal University），简称“华东师大”，位于中国上海，由中华人民共和国教育部直属，位列世界一流大学建设高校、“985工程”、“211工程”，入选国家“2011计划”、“111计划”和“国家建设高水平大学公派研究生项目”，“长三角高校合作联盟”、“金砖国家大学联盟”、“亚太高校书院联盟”、“中日人文交流大学联盟”成员，设有研究生院和国家大学科技园，是教育部、上海市人民政府和国家海洋局共建的全国重点大学。",
+        "major": [
+          "心理学",
+          "软件工程",
+          "教育学"
+        ]
+    }]
+  }
+}
