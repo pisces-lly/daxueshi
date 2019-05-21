@@ -11,7 +11,7 @@
           <p class="item-title">{{item.title}}</p>
           <p class="item-desc">{{item.desc}}</p>
           <p class="item-major-desc">热门专业:</p>
-          <p class="item-major" v-for="items of item.major">{{items}}</p>
+          <p class="item-major" v-for="items of item.major" :key="items">{{items}}</p>
           <button class="item-button">查看详情</button>
         </div>
       </li>
