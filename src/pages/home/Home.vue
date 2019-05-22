@@ -5,7 +5,7 @@
       <x-icon @click="showSide" slot="overwrite-left" type="navicon" size="35" style="fill:#fff;position:relative;top:-8px;left:-3px;"></x-icon>
     </x-header>
     <side-bar></side-bar>
-    <home-header></home-header>
+    <home-search></home-search>
     <home-swiper></home-swiper>
     <home-icons></home-icons>
     <home-company></home-company>
@@ -16,7 +16,7 @@
 <script>
 import { XHeader } from 'vux'
 import SideBar from './components/Sidebar'
-import HomeHeader from './components/Header'
+import HomeSearch from './components/Search'
 import HomeSwiper from './components/Swiper'
 import HomeIcons from './components/Icons'
 import HomeCompany from './components/Company'
@@ -26,7 +26,7 @@ export default {
   components: {
     XHeader,
     SideBar,
-    HomeHeader,
+    HomeSearch,
     HomeSwiper,
     HomeIcons,
     HomeCompany,

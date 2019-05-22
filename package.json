@@ -18,7 +18,7 @@
     "vue-awesome-swiper": "^2.6.7",
     "vue-router": "^3.0.1",
     "vuex": "^3.1.1",
-    "vux": "^2.9.4"
+    "vux": "git://github.com/pisces-lly/vux.git#v2"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
