@@ -1,5 +1,11 @@
 # daxueshi前端开发记录
 
++ 开发文档
+```
+https://easydoc.xyz/?#/doc/31470209
+```
+
+
 ## 5月4日
 ### 项目初始化
 创建Git仓库daxueshi
