@@ -8,7 +8,7 @@
      <!-- 这里才是侧栏代码部分 -->
       <div class="side-content" v-show="isRellyShow">
      <!-- css transition动画 加深理解 -->
-       <div class="name">用户名</div>
+       <div class="name">大学仕</div>
        <group gutter="1rem">
          <cell title="我的消息" is-link>
            <div class="badge-value">
@@ -21,7 +21,7 @@
          <cell title="关于" is-link></cell>
          <divider></divider>
          <br><br>
-         <x-button type="primary" link="/" style="width:4.0rem;">登陆/注册</x-button>
+         <x-button @click="showSignup" type="primary" link="/Signin" style="width:4.0rem;">登陆/注册</x-button>
          <br>
        </group>
       </div>
@@ -46,6 +46,9 @@ export default {
   methods: {
     hideSide: function () {
       this.$store.dispatch('hideSideBar')
+    },
+    showSignup: function () {
+      this.$store.dispatch('showSignup')
     }
   },
   computed: {

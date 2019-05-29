@@ -5,7 +5,7 @@
       热门学校
     </div>
     <ul>
-      <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
+      <li class="item border-bottom" v-for="item of schoolList" :key="item.id">
         <img class="item-img" :src="item.imgUrl"/>
         <div class="item-info">
           <p class="item-title">{{item.title}}</p>
@@ -24,7 +24,7 @@ export default {
   name: 'HomeRecommend',
   data () {
     return {
-      recommendList: [{
+      schoolList: [{
         id: '0001',
         imgUrl: require('../../../img/ecnu.png'),
         title: '华东师范大学',

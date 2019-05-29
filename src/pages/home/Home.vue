@@ -41,9 +41,6 @@ export default {
     showSide: function () {
       this.$store.dispatch('showSideBar')
     }
-  },
-  mounted: function () {
-
   }
 }
 </script>

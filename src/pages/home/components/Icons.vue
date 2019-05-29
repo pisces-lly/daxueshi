@@ -1,6 +1,6 @@
 <template>
   <div class="icons">
-    <swiper>
+    <swiper :options="SwiperOption">
       <swiper-slide v-for="(page, index) of pages" :key="index">
       <div class="icon" v-for="item of page" :key="item.id">
         <div class="icon-image">
@@ -42,7 +42,10 @@ export default {
         id: '0006',
         imgUrl: require('../../../img/myinfo.png'),
         desc: '我的'
-      }]
+      }],
+      SwiperOption: {
+        autoplay: false
+      }
     }
   },
   computed: {
