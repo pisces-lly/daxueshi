@@ -2,7 +2,7 @@
   <div>
     <x-header title="登陆"></x-header>
     <group gutter="0">
-      <x-input title="邮箱" is-type="email" v-model="loginForm.email" style="width:4.0rem;"></x-input>
+      <x-input title="邮箱" is-type="email" v-model="loginForm.email"></x-input>
       <x-input title="密码" type="text" placeholder="" v-model="loginForm.password" ></x-input>
     </group>
     <br><br><br><br>

@@ -10,15 +10,18 @@
      <!-- css transition动画 加深理解 -->
        <div class="name">大学仕</div>
        <group gutter="1rem">
-         <cell title="我的消息" is-link>
+         <!--<cell title="我的消息" is-link>
            <div class="badge-value">
              <badge></badge>
            </div>
-         </cell>
-         <cell title="个人中心" is-link></cell>
-         <cell title="设置" is-link></cell>
+         </cell>-->
+         <cell title="个人信息" link="/Information"></cell>
+         <cell title="我的关注" is-link></cell>
+         <cell title="我的讨论" is-link></cell>
+         <cell title="我的手记" is-link></cell>
+         <cell title="积分兑换" is-link></cell>
          <cell title="意见反馈" is-link></cell>
-         <cell title="关于" is-link></cell>
+         <cell title="设置" is-link></cell>
          <divider></divider>
          <br><br>
          <x-button @click="showSignup" type="primary" link="/Signin" style="width:4.0rem;">登陆/注册</x-button>
