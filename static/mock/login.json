@@ -1,9 +1,5 @@
 {
-  "ret": true,
-  "data": {
-    "loginForm": [{
-      "emil": "123@qq.com",
-      "password": 123456
-    }]
-  }
+  "code": 0,
+  "msg": "success",
+  "data":  "token_fi2748hrdt72jd"
 }

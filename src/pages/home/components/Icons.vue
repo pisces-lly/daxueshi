@@ -4,7 +4,7 @@
       <swiper-slide v-for="(page, index) of pages" :key="index">
       <div class="icon" v-for="item of page" :key="item.id">
         <div class="icon-image">
-          <img class="icon-imagecontent" :src='item.imgUrl'/>
+          <img class="icon-imagecontent" :src='item.imgUrl' @click="ChangePage(item.name)"/>
         </div>
         <p class="icon-desc">{{item.desc}}</p>
       </div>
@@ -21,31 +21,41 @@ export default {
       iConList: [{
         id: '0001',
         imgUrl: require('../../../img/company.png'),
-        desc: '公司'
-      }, {
+        desc: '公司',
+        name: 'CompanyList'
+      }, /* {
         id: '0002',
         imgUrl: require('../../../img/school.png'),
         desc: '学校'
-      }, {
+      }, */{
         id: '0003',
         imgUrl: require('../../../img/major.png'),
-        desc: '专业'
+        desc: '专业',
+        name: 'Major'
       }, {
         id: '0004',
         imgUrl: require('../../../img/forum.png'),
-        desc: '论坛'
+        desc: '论坛',
+        name: 'Forum'
       }, {
         id: '0005',
         imgUrl: require('../../../img/help.png'),
-        desc: '帮助'
+        desc: '帮助',
+        name: 'Help'
       }, {
         id: '0006',
         imgUrl: require('../../../img/myinfo.png'),
-        desc: '我的'
+        desc: '我的',
+        name: 'My'
       }],
       SwiperOption: {
         autoplay: false
       }
+    }
+  },
+  methods: {
+    ChangePage: function (name) {
+      this.$router.push({path: `${name}`})
     }
   },
   computed: {

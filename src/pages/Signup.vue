@@ -10,7 +10,7 @@
         <x-input title="确认密码" v-model="password2" type="text" placeholder="" :equal-with="password"></x-input>
     </group>
       <br><br><br><br>
-      <x-button type="primary" link="" style="width:4.0rem;">注册</x-button>
+      <x-button type="primary" link="" @click.native="register" style="width:4.0rem;">注册</x-button>
   </div>
 </template>
 
@@ -28,6 +28,10 @@ export default {
     return {
       password: '',
       password2: ''
+    }
+  },
+  methods: {
+    register () {
     }
   }
 }
