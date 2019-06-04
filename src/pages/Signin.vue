@@ -41,20 +41,20 @@ export default {
         alert('账号或密码不能为空')
       } else {
         axios({
-          method: 'post',
-          url: 'http://localhost/dxs/user/login',
+          method: 'get',
+          url: '/dxs/user/login.json',
           data: _this.loginForm
         }).then(res => {
+          if (res.data.code === 0) {
+            _this.$router.push('/')
+            console.log(res.data.msg)
+          } else {
+            console.log(res.data.data)
+          }
           console.log(res.data)
-          _this.userToken = res.data.token
+          _this.userToken = res.data.data
           // 将用户token保存到vuex中
           _this.changeLogin({ Authorization: _this.userToken })
-          if (_this.userToken.substr(0, 6) === 'token_') {
-            alert('登陆成功')
-            _this.$router.push('/')
-          } else {
-            alert('账号或密码错误')
-          }
         })
       }
     }

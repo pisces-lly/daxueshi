@@ -1,0 +1,69 @@
+{
+  "CompanyList": [{
+    "name": "阿里巴巴",
+    "keyword": "alibaba",
+    "src": "/static/img/alibaba.jpg",
+    "desc": "杭州·电子商务·10000人以上"
+  },{
+    "name": "百 度",
+    "keyword": "baidu",
+    "src": "/static/img/alibaba.jpg",
+    "desc": "杭州·电子商务·10000人以上"
+  },{
+    "name": "腾 讯",
+    "keyword": "tencent",
+    "src": "/static/img/alibaba.jpg",
+    "desc": "杭州·电子商务·10000人以上"
+  },{
+    "name": "京 东",
+    "keyword": "jingdong",
+    "src": "/static/img/alibaba.jpg",
+    "desc": "杭州·电子商务·10000人以上"
+  },{
+    "name": "网 易",
+    "keyword": "wangyi",
+    "src": "/static/img/alibaba.jpg",
+    "desc": "杭州·电子商务·10000人以上"
+  },{
+    "name": "携 程",
+    "keyword": "xiecheng",
+    "src": "/static/img/alibaba.jpg",
+    "desc": "杭州·电子商务·10000人以上"
+  },{
+    "name": "新 浪",
+    "keyword": "xinlang",
+    "src": "/static/img/alibaba.jpg",
+    "desc": "杭州·电子商务·10000人以上"
+  },{
+    "name": "去哪儿网",
+    "keyword": "qunar",
+    "src": "/static/img/alibaba.jpg",
+    "desc": "杭州·电子商务·10000人以上"
+  },{
+    "name": "微 软",
+    "keyword": "microsoft",
+    "src": "/static/img/alibaba.jpg",
+    "desc": "杭州·电子商务·10000人以上"
+  },{
+    "name": "亚马逊",
+    "keyword": "amazon",
+    "src": "/static/img/alibaba.jpg",
+    "desc": "杭州·电子商务·10000人以上"
+  },{
+    "name": "饿了么",
+    "keyword": "ele",
+    "src": "/static/img/alibaba.jpg",
+    "desc": "杭州·电子商务·10000人以上"
+  },{
+    "name": "思 科",
+    "keyword": "cisco",
+    "src": "/static/img/alibaba.jpg",
+    "desc": "杭州·电子商务·10000人以上"
+  },{
+    "name": "完美世界",
+    "keyword": "perfectworld",
+    "src": "/static/img/alibaba.jpg",
+    "desc": "杭州·电子商务·10000人以上"
+  }
+  ]
+}

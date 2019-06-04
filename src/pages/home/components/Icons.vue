@@ -2,9 +2,9 @@
   <div class="icons">
     <swiper :options="SwiperOption">
       <swiper-slide v-for="(page, index) of pages" :key="index">
-      <div class="icon" v-for="item of page" :key="item.id">
+      <div class="icon" v-for="item of page" :key="item.id"  @click="ChangePage(item.name)">
         <div class="icon-image">
-          <img class="icon-imagecontent" :src='item.imgUrl' @click="ChangePage(item.name)"/>
+          <img class="icon-imagecontent" :src='item.imgUrl'/>
         </div>
         <p class="icon-desc">{{item.desc}}</p>
       </div>

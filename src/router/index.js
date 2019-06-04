@@ -39,8 +39,10 @@ const router = new Router({
       component: CompanyList
     },
     {
-      path: '/CompanyList/:key',
-      component: CompanyDetail
+      path: '/CompanyList/:keyword',
+      name: CompanyDetail,
+      component: CompanyDetail,
+      props: true
     }
   ]
 })
